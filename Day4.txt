@@ -14,5 +14,5 @@ Types of Pipeline:
     - Defined using a Node blocks.
     - For advanced, highly dynamic workflows.
 
-
-Declarative
+    
+}
