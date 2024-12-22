@@ -39,12 +39,5 @@ gitlab-ci, actions, code pipeline, cloud build, azure pipeline
 
 Install Jenkins (Make sure Java is to be install)
 
-RUn a fist job
-
-TASK:
-1. Creat a job to pull SC from pvt repo in git lab
-
-2. Config, email notification for job status in jenkins
-gmail - two way auth (dissable) - low security app (enable)
 
 

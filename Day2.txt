@@ -1,2 +1,3 @@
-Creat a job to pull SC from public repo in  GitHub
- overview of Jenkins Dashboard
+Task done in class:
+1.Create a job to pull SC from public repo in  GitHub
+2. overview of Jenkins Dashboard
