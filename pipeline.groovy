@@ -2,13 +2,13 @@ pipeline {
     agent any
     	stages {
         	stage('Pull') {
-			stages {
-				echo 'Pull Sucess'
+			steps {
+				echo 'Pull Success'
             }
 	}
         stage('Build') {
             steps {
-                sh 'echo \'Application is Builed!!\''
+                sh 'echo \'Application is Build!!\''
             }
         }
         stage('Test') {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                    echo 'Deploy Success'
+                    echo 'Congarts!!Deploy Success'
             }
         }
     }
