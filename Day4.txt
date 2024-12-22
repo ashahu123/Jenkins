@@ -1,0 +1,18 @@
+*Pipeline:
+A continuous delivery (CD) pipeline is an automated expression of your process for getting software from 
+version control right through to your users and customers. 
+
+Jobs -- Pipeline
+Pull > BUILD > Test > Deployemnt (CICD)
+
+Types of Pipeline:
+1. Declarative : Easy to Learn
+    -   Defined using a pipeline blocks.
+    -   For simpler, consistent pipeline.
+
+2. Scripted : COmplex to Learn
+    - Defined using a Node blocks.
+    - For advanced, highly dynamic workflows.
+
+
+Declarative
