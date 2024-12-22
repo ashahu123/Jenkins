@@ -1,0 +1,2 @@
+Creat a job to pull SC from public repo in  GitHub
+ overview of Jenkins Dashboard
