@@ -14,5 +14,10 @@ Types of Pipeline:
     - Defined using a Node blocks.
     - For advanced, highly dynamic workflows.
 
+PULL STAGE:
+
+
+HW TASK:
+
+Run a pipeline on slave node. 
     
-}
