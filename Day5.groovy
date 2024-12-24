@@ -1,5 +1,6 @@
 Day5.txt
  *Scripted Pipeline:
+ 
  - How to write
  - Pull stage using scripted pipeline
 
@@ -23,4 +24,5 @@ node {
 
 * Declarative Pipeline:
 
+- run a pipeline using SCM from Github without writing code in Jenkins.
 
