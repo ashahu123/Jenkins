@@ -21,3 +21,6 @@ node {
     }
 }
 
+* Declarative Pipeline:
+
+
