@@ -1,0 +1,4 @@
+BUILD STAGE:
+
+In this we pull SCM from Github and build using maven.
+In this we have installed maven and build the war in target directory
