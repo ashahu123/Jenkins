@@ -3,17 +3,31 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git 'https://github.com/ashahu123/Jenkins.git'
+                git 'https://github.com/shubhamkalsait/studentapp-ui.git'
             }
         }
         stage('Build') {
             steps {
-                sh 'echo \'Application is Build\''
+                sh 'mvn clean package'
             }
         }
+        // stage('Test') {
+        //     steps {
+        //         sh 'mvn sonar:sonar   -Dsonar.projectKey=studentapp   -Dsonar.host.url=http://15.206.116.117:9000   -Dsonar.login=sqp_f0e8631541a7a93efd083ae992ff381acc9c1fc7'
+        //     }
+        // }
         stage('Test') {
             steps {
-                echo 'Test Success'
+                withSonarQubeEnv(installationName: 'sonar', credentialsId: 'sonar-token') {
+                    sh 'mvn sonar:sonar -Dsonar.projectKey=studentapp'
+                }           
+            }
+        }
+        stage('QualityGate') {
+            steps {
+                timeout(10) {
+                    waitForQualityGate abortPipeline: true, credentialsId: 'sonar-token'
+                }
             }
         }
         stage('Deploy') {
