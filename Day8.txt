@@ -1,0 +1,3 @@
+Installation of Sonarqube:
+
+It required an seperate EC2 instance.

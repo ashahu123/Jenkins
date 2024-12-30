@@ -1,0 +1,9 @@
+Test Stage:
+In this Code quity test is done.
+
+Sonarqube used for continuous inspection of Code quality to perform automatic reviews  to detect bugs & code.
+
+Sonarqube---sonar--9000
+Tool--companyName--Port
+
+Intro of Sonarqube.

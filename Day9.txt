@@ -1,0 +1,8 @@
+-Exploring the Dashboard of Sonarqube:
+
+- In this we have code test student app in Sonarqube
+
+Devops-> Need to check quality gate status Passed or Failed
+
+Quality gate -> Defined as how much % dupication,bugs criteria to Passed/Failed code.
+
