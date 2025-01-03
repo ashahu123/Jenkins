@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 withSonarQubeEnv(installationName: 'sonar', credentialsId: 'sonar-token') {
-                    sh 'mvn sonar:sonar -Dsonar.projectKey=studentapp'
+                    sh '/opt/maven/bin/mvn sonar:sonar -Dsonar.projectKey=studentapp'
                 }           
             }
         }
