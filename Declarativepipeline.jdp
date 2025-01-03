@@ -30,14 +30,15 @@ pipeline {
                 }
             }
         }
-//        stage('Deploy') {
-//            steps {
-//                deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://172.31.9.237:8080')], contextPath: '/', war: '**/*.war'
-//          }
-        stage('Delivery') 
+        stage('Deploy') {
             steps {
-                sh'aws s3 cp /var/lib/jenkins/workspace/studentapp/target/studentapp-2.2-SNAPSHOT.war s3://jenkins-s3-bucket111/studentapp.war
-            }
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://172.31.9.237:8080')], contextPath: '/', war: '**/*.war'
+          }
+//
+//     stage('Delivery') 
+//            steps {
+//              sh'aws s3 cp /var/lib/jenkins/workspace/studentapp/target/studentapp-2.2-SNAPSHOT.war s3://jenkins-s3-bucket111/studentapp.war
+//          }
           }
     }
 }
