@@ -10,4 +10,7 @@ Key Features:
 -Handles auto-scaling, load balancing, and self-healing (restarts crashed containers).
 -Manages container networking and storage.
 
-2
+2. What are the main component of kubernetes?
+kubernetes component into two parts Control & Data Plane.
+Control Plane: API server,Schedular,Control manager, Cloud control manager, ETCD
+Data Plane: Kubelet,Kubeproxy,Container runtime.
