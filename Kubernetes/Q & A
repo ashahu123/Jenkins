@@ -12,5 +12,14 @@ Key Features:
 
 2. What are the main component of kubernetes?
 kubernetes component into two parts Control & Data Plane.
-Control Plane: API server,Schedular,Control manager, Cloud control manager, ETCD
-Data Plane: Kubelet,Kubeproxy,Container runtime.
+Control(Master) Plane: API server,Schedular,Control manager, Cloud control manager, ETCD
+Data(Worker) Plane: Kubelet,Kubeproxy,Container runtime.
+
+a)API server - Expose the k8s API,all components (users, CLI, other components) communicate through it.
+b)Schedular - Respsonible for assigning workloads i.e.Pods
+c)Control manager - Respsonible for ensuring the cluster desired state & perforimg loop operations.
+d)Cloud control manager - Handles ineractions b/w k8s cluster & underlying cloud providers(AWS,GCP)
+e)ETCD - key-value store used to store all cluster data.
+f)Kubelet - Respsonible for pod mgt,health monitroring & inform to master node to take action.
+g)Kubeproxy - N/W component responsilbe for communcation b/q service & pods.
+h)Container runtime - actually runs containers.
