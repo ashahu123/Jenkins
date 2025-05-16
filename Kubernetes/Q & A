@@ -1,0 +1,13 @@
+1. What is differnce b/w Docker & Kubernetes?
+Docker is a tool for creating, managing, and running containers.It packages applications with all their dependencies into a single, lightweight container.
+Key Features:
+-Creates and runs containers.
+-Uses Dockerfile to define how a container image is built.
+Kubernetes is a system for managing multiple containers (often across many machines).
+It automates deployment, scaling, and operations of application containers.
+Key Features:
+-Orchestrates (manages) many containers across clusters of servers.
+-Handles auto-scaling, load balancing, and self-healing (restarts crashed containers).
+-Manages container networking and storage.
+
+2
